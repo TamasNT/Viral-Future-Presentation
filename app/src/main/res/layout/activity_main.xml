@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_container"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.32"
+        android:id="@+id/contenedorprincipal"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            app:srcCompat="@drawable/portadadiferente" />
+
+        <RelativeLayout
+            android:id="@+id/bordeperfil"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/esquinas_redondeadas"
+            >
+
+            <ImageView
+                android:id="@+id/imagenperfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:paddingVertical="18dp"
+                app:srcCompat="@drawable/logosinfondoparaperfil" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:id="@+id/contenedorcentral"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.15"
+            android:id="@+id/contenedordescriptivo"
+            android:layout_below="@id/imagenperfil"
+            >
+
+            <TextView
+                android:id="@+id/campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Marketing and Publicity"
+                android:textAlignment="center"
+                android:textColor="#3b3b3b"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campo"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Take your business to the next level. This is Viral Future. We are a Freelancer agency  dedicated to marketing and advertising on Internet"
+                android:textAlignment="center"
+                android:textColor="#3b3b3b"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contboton1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:layout_below="@id/contenedordescriptivo"
+            >
+
+            <Button
+                android:id="@+id/botontelefono"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@drawable/telephone"
+                android:text="+34 613 23 17 74"
+                android:textColor="#3b3b3b"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contboton2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:layout_below="@id/contboton1"
+            >
+
+            <Button
+                android:id="@+id/botongmail"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@drawable/email"
+                android:text="viralfuturemark@gmail.com"
+                android:textAllCaps="false"
+                android:textColor="#3b3b3b"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contboton3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:layout_below="@id/contboton2"
+            >
+
+            <Button
+                android:id="@+id/botondirecc"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@drawable/direccion"
+                android:text="Calle Donoso Cortés, 61"
+                android:textAllCaps="false"
+                android:textColor="#3b3b3b"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contboton4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:layout_below="@id/contboton3"
+            >
+
+            <Button
+                android:id="@+id/botonweb"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@drawable/web"
+                android:text="www.viralfuture.org"
+                android:textAllCaps="false"
+                android:textColor="#3b3b3b"
+                android:textSize="14dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/contenedorabajo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.08"
+        android:background="#E6E6E6"
+        >
+
+        <ImageButton
+            android:id="@+id/botonfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/botoninicio"
+            app:srcCompat="@drawable/facebookoscuro"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/botoninicio"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/boton_inicio"
+            android:drawableBottom="@drawable/logooscurocuarenta"
+            android:textColor="#3b3b3b" />
+
+        <ImageButton
+            android:id="@+id/botoninstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/botoninicio"
+            app:srcCompat="@drawable/instagramoscuro"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
